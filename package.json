@@ -8,7 +8,6 @@
     "build": "npm run clear && ./node_modules/.bin/babel --out-dir lib src",
     "build:watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint src/*.js",
-    "prepush": "npm run lint",
     "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
     "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
     "test:coverage": "nyc npm test"
@@ -47,10 +46,12 @@
     "eslint-plugin-import": "^2.18.0",
     "husky": "^0.11.9",
     "mocha": "^6.1.4",
-    "node-fetch": "^2.6.0",
     "nyc": "^14.1.1",
     "rimraf": "^2.6.1",
     "sinon": "^7.3.2",
     "sinon-chai": "^3.3.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0"
   }
 }
