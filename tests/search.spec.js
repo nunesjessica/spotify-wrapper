@@ -3,11 +3,11 @@ import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
 chai.use(sinonChai);
 
-import { search, searchAlbums, searchArtists, searchTracks, searchPlaylists } from '../src/main';
+import { search, searchAlbums, searchArtists, searchTracks, searchPlaylists } from '../src/search';
 
 global.fetch = require('node-fetch');
 
-describe('Spotify Wrapper', () => {
+describe('Search', () => {
 
   let fetchedStub;
 
